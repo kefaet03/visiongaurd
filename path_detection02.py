@@ -38,6 +38,7 @@ while True:
         if cls == 0 and conf > 0.5:
             detections.append([[x1, y1, x2 - x1, y2 - y1], conf, "person"])
 
+    
     # Update tracker
     tracks = tracker.update_tracks(detections, frame=frame)
 
